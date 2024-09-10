@@ -3,7 +3,7 @@ using LeetCode.Problems;
 
 namespace LeetCode.Tests
 {
-    public class KidsWithTheGreatestNumberOfCandiesTests
+    public class KidsWithTheGreatestNumberOfCandiesProblemTests
     {
         [Fact]
         public void KidsWithCandies_TestCase_1()
