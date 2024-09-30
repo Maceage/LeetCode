@@ -63,6 +63,6 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
         var actual = deleteTheMiddleNodeOfALinkedListProblem.DeleteMiddle(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [2]);
+        ListNodeUtilities.AssertLinkedList(actual, []);
     }
 }

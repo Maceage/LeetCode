@@ -44,5 +44,7 @@ public class ListNodeUtilities
             currentNode = currentNode.Next;
             i++;
         }
+
+        i.Should().Be(expectedNodeValues.Length);
     }
 }
