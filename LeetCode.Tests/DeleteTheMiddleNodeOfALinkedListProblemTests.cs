@@ -1,6 +1,6 @@
 ﻿using LeetCode.Problems;
 using LeetCode.Problems.Data;
-using LeetCode.Tests.Utilities;
+using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests;
 
@@ -10,7 +10,9 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
     public void DeleteMiddle_TestCase_1()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([1, 3, 4, 7, 1, 2, 6]);
+        int[] numberArray = [1, 3, 4, 7, 1, 2, 6];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         DeleteTheMiddleNodeOfALinkedListProblem deleteTheMiddleNodeOfALinkedListProblem = new DeleteTheMiddleNodeOfALinkedListProblem();
 
@@ -18,14 +20,16 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
         var actual = deleteTheMiddleNodeOfALinkedListProblem.DeleteMiddle(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [1, 3, 4, 1, 2, 6]);
+        actual.AssertLinkedList([1, 3, 4, 1, 2, 6]);
     }
 
     [Fact]
     public void DeleteMiddle_TestCase_2()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([1, 2, 3, 4]);
+        int[] numberArray = [1, 2, 3, 4];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         DeleteTheMiddleNodeOfALinkedListProblem deleteTheMiddleNodeOfALinkedListProblem = new DeleteTheMiddleNodeOfALinkedListProblem();
 
@@ -33,14 +37,16 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
         var actual = deleteTheMiddleNodeOfALinkedListProblem.DeleteMiddle(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [1, 2, 4]);
+        actual.AssertLinkedList([1, 2, 4]);
     }
 
     [Fact]
     public void DeleteMiddle_TestCase_3()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([2, 1]);
+        int[] numberArray = [2, 1];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         DeleteTheMiddleNodeOfALinkedListProblem deleteTheMiddleNodeOfALinkedListProblem = new DeleteTheMiddleNodeOfALinkedListProblem();
 
@@ -48,14 +54,16 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
         var actual = deleteTheMiddleNodeOfALinkedListProblem.DeleteMiddle(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [2]);
+        actual.AssertLinkedList([2]);
     }
 
     [Fact]
     public void DeleteMiddle_TestCase_4()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([2]);
+        int[] numberArray = [2];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         DeleteTheMiddleNodeOfALinkedListProblem deleteTheMiddleNodeOfALinkedListProblem = new DeleteTheMiddleNodeOfALinkedListProblem();
 
@@ -63,6 +71,6 @@ public class DeleteTheMiddleNodeOfALinkedListProblemTests
         var actual = deleteTheMiddleNodeOfALinkedListProblem.DeleteMiddle(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, []);
+        actual.AssertLinkedList([]);
     }
 }

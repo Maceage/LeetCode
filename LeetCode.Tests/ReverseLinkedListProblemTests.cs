@@ -1,6 +1,6 @@
 ﻿using LeetCode.Problems.Data;
 using LeetCode.Problems;
-using LeetCode.Tests.Utilities;
+using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests;
 
@@ -10,7 +10,9 @@ public class ReverseLinkedListProblemTests
     public void ReverseList_TestCase_1()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([1, 2, 3, 4, 5]);
+        int[] numberArray = [1, 2, 3, 4, 5];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         ReverseLinkedListProblem reverseLinkedListProblem = new ReverseLinkedListProblem();
 
@@ -18,14 +20,16 @@ public class ReverseLinkedListProblemTests
         var actual = reverseLinkedListProblem.ReverseList(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [5, 4, 3, 2, 1]);
+        actual.AssertLinkedList([5, 4, 3, 2, 1]);
     }
 
     [Fact]
     public void ReverseList_TestCase_2()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([1, 2]);
+        int[] numberArray = [1, 2];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         ReverseLinkedListProblem reverseLinkedListProblem = new ReverseLinkedListProblem();
 
@@ -33,6 +37,6 @@ public class ReverseLinkedListProblemTests
         var actual = reverseLinkedListProblem.ReverseList(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [2, 1]);
+        actual.AssertLinkedList([2, 1]);
     }
 }

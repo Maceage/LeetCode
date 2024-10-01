@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 using LeetCode.Problems.Data;
 
-namespace LeetCode.Tests.Utilities;
+namespace LeetCode.Tests.Extensions;
 
-public class ListNodeUtilities
+public static class ListNodeExtensions
 {
-    public static ListNode CreateLinkedList(int[] nodeValues)
+    public static ListNode CreateLinkedList(this int[] nodeValues)
     {
         ListNode headNode = new ListNode();
 
@@ -29,7 +29,7 @@ public class ListNodeUtilities
         return headNode;
     }
 
-    public static void AssertLinkedList(ListNode headNode, int[] expectedNodeValues)
+    public static void AssertLinkedList(this ListNode headNode, int[] expectedNodeValues)
     {
         int i = 0;
 

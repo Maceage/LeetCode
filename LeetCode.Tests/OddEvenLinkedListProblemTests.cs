@@ -1,6 +1,6 @@
 ﻿using LeetCode.Problems;
 using LeetCode.Problems.Data;
-using LeetCode.Tests.Utilities;
+using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests;
 
@@ -10,7 +10,9 @@ public class OddEvenLinkedListProblemTests
     public void OddEvenList_TestCase_1()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([1, 2, 3, 4, 5]);
+        int[] numberArray = [1, 2, 3, 4, 5];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         OddEvenLinkedListProblem oddEvenLinkedListProblem = new OddEvenLinkedListProblem();
 
@@ -18,14 +20,16 @@ public class OddEvenLinkedListProblemTests
         ListNode actual = oddEvenLinkedListProblem.OddEvenList(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [1, 3, 5, 2, 4]);
+        actual.AssertLinkedList([1, 3, 5, 2, 4]);
     }
 
     [Fact]
     public void OddEvenList_TestCase_2()
     {
         // Arrange
-        ListNode headNode = ListNodeUtilities.CreateLinkedList([2, 1, 3, 5, 6, 4, 7]);
+        int[] numberArray = [2, 1, 3, 5, 6, 4, 7];
+
+        ListNode headNode = numberArray.CreateLinkedList();
 
         OddEvenLinkedListProblem oddEvenLinkedListProblem = new OddEvenLinkedListProblem();
 
@@ -33,6 +37,6 @@ public class OddEvenLinkedListProblemTests
         ListNode actual = oddEvenLinkedListProblem.OddEvenList(headNode);
 
         // Assert
-        ListNodeUtilities.AssertLinkedList(actual, [2, 3, 6, 7, 1, 5, 4]);
+        actual.AssertLinkedList([2, 3, 6, 7, 1, 5, 4]);
     }
 }
