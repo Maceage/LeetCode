@@ -1,5 +1,4 @@
-﻿using System.Text;
-using LeetCode.Problems.Data;
+﻿using LeetCode.Problems.Data;
 
 namespace LeetCode.Tests.Extensions;
 
@@ -26,23 +25,23 @@ public static class TreeNodeExtensions
                 {
                     int? leftValue = nodeValues[i++];
 
-                    currentNode.Left = new TreeNode();
-
-                    queue.Enqueue(currentNode.Left);
-
                     if (leftValue.HasValue)
                     {
+                        currentNode.Left = new TreeNode();
+
+                        queue.Enqueue(currentNode.Left);
+
                         currentNode.Left.Value = leftValue.Value;
                     }
 
                     int? rightValue = nodeValues[i++];
 
-                    currentNode.Right = new TreeNode();
-
-                    queue.Enqueue(currentNode.Right);
-
                     if (rightValue.HasValue)
                     {
+                        currentNode.Right = new TreeNode();
+
+                        queue.Enqueue(currentNode.Right);
+
                         currentNode.Right.Value = rightValue.Value;
                     }
                 }
