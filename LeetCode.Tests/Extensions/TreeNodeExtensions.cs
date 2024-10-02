@@ -23,7 +23,7 @@ public static class TreeNodeExtensions
 
                 if (i < nodeValues.Length)
                 {
-                    int? leftValue = nodeValues[i++];
+                    int? leftValue = nodeValues.ElementAtOrDefault(i++);
 
                     if (leftValue.HasValue)
                     {
@@ -34,7 +34,7 @@ public static class TreeNodeExtensions
                         currentNode.Left.Value = leftValue.Value;
                     }
 
-                    int? rightValue = nodeValues[i++];
+                    int? rightValue = nodeValues.ElementAtOrDefault(i++);
 
                     if (rightValue.HasValue)
                     {
