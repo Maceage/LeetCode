@@ -50,4 +50,31 @@ public static class TreeNodeExtensions
 
         return rootNode;
     }
+
+    public static TreeNode FindNodeWithValue(this TreeNode treeNode, int nodeValue)
+    {
+        TreeNode nodeWithValue = null;
+
+        if (treeNode != null)
+        {
+            if (treeNode.Value == nodeValue)
+            {
+                nodeWithValue = treeNode;
+            }
+            else
+            {
+                if (treeNode.Left != null)
+                {
+                    nodeWithValue = FindNodeWithValue(treeNode.Left, nodeValue);
+                }
+
+                if (nodeWithValue == null && treeNode.Right != null)
+                {
+                    nodeWithValue = FindNodeWithValue(treeNode.Right, nodeValue);
+                }
+            }
+        }
+
+        return nodeWithValue;
+    }
 }
