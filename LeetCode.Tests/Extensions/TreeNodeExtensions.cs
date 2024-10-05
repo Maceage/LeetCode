@@ -6,10 +6,12 @@ public static class TreeNodeExtensions
 {
     public static TreeNode CreateTree(this int?[] nodeValues)
     {
-        TreeNode rootNode = new TreeNode();
+        TreeNode rootNode = null;
 
         if (nodeValues.Length > 0)
         {
+            rootNode = new TreeNode();
+
             rootNode.Value = nodeValues[0]!.Value;
 
             Queue<TreeNode> queue = new Queue<TreeNode>();
