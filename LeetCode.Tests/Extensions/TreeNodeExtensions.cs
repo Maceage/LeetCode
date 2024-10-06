@@ -1,4 +1,5 @@
-﻿using LeetCode.Problems.Data;
+﻿using FluentAssertions.Formatting;
+using LeetCode.Problems.Data;
 
 namespace LeetCode.Tests.Extensions;
 
@@ -78,5 +79,41 @@ public static class TreeNodeExtensions
         }
 
         return nodeWithValue;
+    }
+
+    public static int?[] GetNodeValues(this TreeNode treeNode)
+    {
+        List<int?> nodeValues = new List<int?>();
+
+        Queue<TreeNode> nodesQueue = new Queue<TreeNode>();
+
+        nodesQueue.Enqueue(treeNode);
+
+        while (nodesQueue.Count > 0)
+        {
+            var currentNode = nodesQueue.Dequeue();
+
+            if (currentNode != null)
+            {
+                nodeValues.Add(currentNode.Value);
+            }
+            else
+            {
+                nodeValues.Add(null);
+            }
+
+            if ((currentNode?.Left != null) || (currentNode?.Right != null))
+            {
+                nodesQueue.Enqueue(currentNode.Left);
+                nodesQueue.Enqueue(currentNode.Right);
+            }
+        }
+
+        while ((nodeValues.Count > 0) && (nodeValues.Last() == null))
+        {
+            nodeValues.RemoveAt(nodeValues.Count - 1);
+        }
+
+        return nodeValues.ToArray();
     }
 }
