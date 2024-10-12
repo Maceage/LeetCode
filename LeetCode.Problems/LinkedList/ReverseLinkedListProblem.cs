@@ -6,12 +6,19 @@ public class ReverseLinkedListProblem
 {
     public ListNode ReverseList(ListNode head)
     {
+        return ReverseListRecursive(head);
+        return ReverseListIterative(head);
+        return ReverseListStack(head);
+    }
+
+    private static ListNode ReverseListRecursive(ListNode head)
+    {
         if ((head == null) || head.Next == null)
         {
             return head;
         }
 
-        ListNode result = ReverseList(head.Next);
+        ListNode result = ReverseListRecursive(head.Next);
 
         head.Next.Next = head;
         head.Next = null;
@@ -19,58 +26,58 @@ public class ReverseLinkedListProblem
         return result;
     }
 
-    //public ListNode ReverseList(ListNode head)
-    //{
-    //    ListNode previousNode = null;
-    //    ListNode currentNode = head;
+    private static ListNode ReverseListIterative(ListNode head)
+    {
+        ListNode previousNode = null;
+        ListNode currentNode = head;
 
-    //    while (currentNode != null)
-    //    {
-    //        ListNode nextNode = currentNode.Next;
+        while (currentNode != null)
+        {
+            ListNode nextNode = currentNode.Next;
 
-    //        currentNode.Next = previousNode;
+            currentNode.Next = previousNode;
 
-    //        previousNode = currentNode;
+            previousNode = currentNode;
 
-    //        currentNode = nextNode;
-    //    }
+            currentNode = nextNode;
+        }
 
-    //    return previousNode;
-    //}
+        return previousNode;
+    }
 
-    //public ListNode ReverseList(ListNode head)
-    //{
-    //    if ((head == null) || (head.Next == null))
-    //    {
-    //        return head;
-    //    }
+    private static ListNode ReverseListStack(ListNode head)
+    {
+        if ((head == null) || (head.Next == null))
+        {
+            return head;
+        }
 
-    //    ListNode currentNode = head;
+        ListNode currentNode = head;
 
-    //    Stack<ListNode> listNodeStack = new Stack<ListNode>();
+        Stack<ListNode> listNodeStack = new Stack<ListNode>();
 
-    //    while (currentNode != null)
-    //    {
-    //        listNodeStack.Push(currentNode);
+        while (currentNode != null)
+        {
+            listNodeStack.Push(currentNode);
 
-    //        currentNode = currentNode.Next;
-    //    }
+            currentNode = currentNode.Next;
+        }
 
-    //    ListNode newHead = listNodeStack.Pop();
+        ListNode newHead = listNodeStack.Pop();
 
-    //    newHead.Next = null;
+        newHead.Next = null;
 
-    //    currentNode = newHead;
+        currentNode = newHead;
 
-    //    while (listNodeStack.TryPop(out var nextNode))
-    //    {
-    //        nextNode.Next = null;
+        while (listNodeStack.TryPop(out var nextNode))
+        {
+            nextNode.Next = null;
 
-    //        currentNode.Next = nextNode;
+            currentNode.Next = nextNode;
 
-    //        currentNode = nextNode;
-    //    }
+            currentNode = nextNode;
+        }
 
-    //    return newHead;
-    //}
+        return newHead;
+    }
 }

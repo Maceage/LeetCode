@@ -4,6 +4,12 @@ public class StringCompressionProblem
 {
     public int Compress(ref char[] chars)
     {
+        return CompressSolution(ref chars);
+        return CompressOriginal(ref chars);
+    }
+
+    private static int CompressSolution(ref char[] chars)
+    {
         var i = 0;
         int result = 0;
 
@@ -32,33 +38,33 @@ public class StringCompressionProblem
         return result;
     }
 
-    //public int Compress(ref char[] chars)
-    //{
-    //    var i = 0;
-    //    var j = 0;
+    private static int CompressOriginal(ref char[] chars)
+    {
+        var i = 0;
+        var j = 0;
 
-    //    while (i < chars.Length)
-    //    {
-    //        var current = chars[i];
-    //        var counter = 0;
+        while (i < chars.Length)
+        {
+            var current = chars[i];
+            var counter = 0;
 
-    //        while (i < chars.Length && chars[i] == current)
-    //        {
-    //            i++;
-    //            counter++;
-    //        }
+            while (i < chars.Length && chars[i] == current)
+            {
+                i++;
+                counter++;
+            }
 
-    //        chars[j++] = current;
+            chars[j++] = current;
 
-    //        if (counter > 1)
-    //        {
-    //            foreach (var counterChar in counter.ToString())
-    //            {
-    //                chars[j++] = counterChar;
-    //            }
-    //        }
-    //    }
+            if (counter > 1)
+            {
+                foreach (var counterChar in counter.ToString())
+                {
+                    chars[j++] = counterChar;
+                }
+            }
+        }
 
-    //    return j;
-    //}
+        return j;
+    }
 }

@@ -6,6 +6,12 @@ public class MaximumDepthOfBinaryTreeProblem
 {
     public int MaxDepth(TreeNode root)
     {
+        return MaxDepthStack(root);
+        return MaxDepthRecursion(root);
+    }
+
+    private static int MaxDepthStack(TreeNode root)
+    {
         if (root == null)
         {
             return 0;
@@ -37,18 +43,18 @@ public class MaximumDepthOfBinaryTreeProblem
         return depth;
     }
 
-    //public int MaxDepth(TreeNode root)
-    //{
-    //    if (root == null)
-    //    {
-    //        return 0;
-    //    }
-    //    else
-    //    {
-    //        int leftHeight = MaxDepth(root.Left);
-    //        int rightHeight = MaxDepth(root.Right);
+    private static int MaxDepthRecursion(TreeNode root)
+    {
+        if (root == null)
+        {
+            return 0;
+        }
+        else
+        {
+            int leftHeight = MaxDepthRecursion(root.Left);
+            int rightHeight = MaxDepthRecursion(root.Right);
 
-    //        return 1 + Math.Max(leftHeight, rightHeight);
-    //    }
-    //}
+            return 1 + Math.Max(leftHeight, rightHeight);
+        }
+    }
 }

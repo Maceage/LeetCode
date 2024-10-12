@@ -4,6 +4,12 @@ public class ProductOfArrayExceptSelfProblem
 {
     public int[] ProductExceptSelf(int[] nums)
     {
+        return ProductExceptSelfLeftAndRightProductLists(nums);
+        return ProductExceptSelfSpaceApproach(nums);
+    }
+
+    private static int[] ProductExceptSelfLeftAndRightProductLists(int[] nums)
+    {
         int length = nums.Length;
 
         int[] leftProducts = new int[length];
@@ -33,34 +39,34 @@ public class ProductOfArrayExceptSelfProblem
         return result;
     }
 
-    //public int[] ProductExceptSelf(int[] nums)
-    //{
-    //    int[] resultNums = new int[nums.Length];
+    private static int[] ProductExceptSelfSpaceApproach(int[] nums)
+    {
+        int[] resultNums = new int[nums.Length];
 
-    //    for (int i = 0; i < nums.Length; i++)
-    //    {
-    //        int? result = null;
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int? result = null;
 
-    //        for (int j = 0; j < nums.Length; j++)
-    //        {
-    //            if (j != i)
-    //            {
-    //                int currentNum = nums[j];
+            for (int j = 0; j < nums.Length; j++)
+            {
+                if (j != i)
+                {
+                    int currentNum = nums[j];
 
-    //                if (!result.HasValue)
-    //                {
-    //                    result = currentNum;
-    //                }
-    //                else
-    //                {
-    //                    result *= currentNum;
-    //                }
-    //            }
-    //        }
+                    if (!result.HasValue)
+                    {
+                        result = currentNum;
+                    }
+                    else
+                    {
+                        result *= currentNum;
+                    }
+                }
+            }
 
-    //        resultNums[i] = result ?? 0;
-    //    }
+            resultNums[i] = result ?? 0;
+        }
 
-    //    return resultNums;
-    //}
+        return resultNums;
+    }
 }

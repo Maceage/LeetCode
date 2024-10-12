@@ -4,6 +4,12 @@ public class MaximumAverageSubarrayProblem
 {
     public double FindMaxAverage(int[] nums, int k)
     {
+        return FindMaxAverageSlidingWindow(nums, k);
+        return FindMaxAverageCumulativeSum(nums, k);
+    }
+
+    private static double FindMaxAverageSlidingWindow(int[] nums, int k)
+    {
         double sum = 0;
 
         for (int i = 0; i < k; i++)
@@ -28,29 +34,29 @@ public class MaximumAverageSubarrayProblem
         return result / k;
     }
 
-    //public double FindMaxAverage(int[] nums, int k)
-    //{
-    //    int[] sum = new int[nums.Length];
+    private static double FindMaxAverageCumulativeSum(int[] nums, int k)
+    {
+        int[] sum = new int[nums.Length];
 
-    //    sum[0] = nums[0];
+        sum[0] = nums[0];
 
-    //    for (int i = 1; i < nums.Length; i++)
-    //    {
-    //        int current = nums[i];
-    //        int previousSum = sum[i - 1];
+        for (int i = 1; i < nums.Length; i++)
+        {
+            int current = nums[i];
+            int previousSum = sum[i - 1];
 
-    //        sum[i] = previousSum + current;
-    //    }
+            sum[i] = previousSum + current;
+        }
 
-    //    double result = sum[k - 1] * 1.0 / k;
+        double result = sum[k - 1] * 1.0 / k;
 
-    //    for (int i = k; i < nums.Length; i++)
-    //    {
-    //        double newResult = (sum[i] - sum[i - k]) * 1.0 / k;
+        for (int i = k; i < nums.Length; i++)
+        {
+            double newResult = (sum[i] - sum[i - k]) * 1.0 / k;
 
-    //        result = Math.Max(result, newResult);
-    //    }
+            result = Math.Max(result, newResult);
+        }
 
-    //    return result;
-    //}
+        return result;
+    }
 }
