@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems;
+﻿namespace LeetCode.Problems.HashMap;
 
 public class DetermineIfTwoStringsAreCloseProblem
 {

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems;
+﻿namespace LeetCode.Problems.SlidingWindow;
 
 public class LongestSubarrayOfOnesAfterDeletingOneElementProblem
 {

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems;
+﻿namespace LeetCode.Problems.TwoPointers;
 
 public class ContainerWithTheMostWaterProblem
 {

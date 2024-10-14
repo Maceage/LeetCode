@@ -1,6 +1,6 @@
 ﻿using LeetCode.Problems.Data;
 
-namespace LeetCode.Problems;
+namespace LeetCode.Problems.LinkedList;
 
 public class OddEvenLinkedListProblem
 {

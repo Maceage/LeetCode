@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace LeetCode.Problems;
+namespace LeetCode.Problems.HashMap;
 
 public class EqualRowAndColumnPairsProblem
 {

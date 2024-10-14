@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using LeetCode.Problems;
+using LeetCode.Problems.HashMap;
 
 namespace LeetCode.Tests.HashMap;
 

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems;
+﻿namespace LeetCode.Problems.Array;
 
 public class ReverseWordsInAStringProblem
 {

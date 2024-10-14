@@ -1,5 +1,5 @@
 ﻿using LeetCode.Problems.Data;
-using LeetCode.Problems;
+using LeetCode.Problems.LinkedList;
 using LeetCode.Tests.Extensions;
 
 namespace LeetCode.Tests.LinkedList;

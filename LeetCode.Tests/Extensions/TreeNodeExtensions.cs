@@ -1,5 +1,4 @@
-﻿using FluentAssertions.Formatting;
-using LeetCode.Problems.Data;
+﻿using LeetCode.Problems.Data;
 
 namespace LeetCode.Tests.Extensions;
 

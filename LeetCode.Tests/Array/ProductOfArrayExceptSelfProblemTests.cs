@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using LeetCode.Problems;
+using LeetCode.Problems.Array;
 
 namespace LeetCode.Tests.Array;
 
