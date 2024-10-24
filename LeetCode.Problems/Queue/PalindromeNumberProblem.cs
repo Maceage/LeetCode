@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Queue;
 
+/// <summary>
+/// https://leetcode.com/problems/palindrome-number
+/// </summary>
 public class PalindromeNumberProblem
 {
     public bool IsPalindrome(int x)

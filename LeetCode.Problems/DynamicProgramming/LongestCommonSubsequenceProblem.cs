@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/longest-common-subsequence
+/// </summary>
 public class LongestCommonSubsequenceProblem
 {
     private static int[,] _memo;

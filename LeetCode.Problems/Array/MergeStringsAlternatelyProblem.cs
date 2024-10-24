@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/merge-strings-alternately
+/// </summary>
 public class MergeStringsAlternatelyProblem
 {
     public string MergeAlternately(string word1, string word2)

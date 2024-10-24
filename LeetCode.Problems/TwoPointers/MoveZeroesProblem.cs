@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.TwoPointers;
 
+/// <summary>
+/// https://leetcode.com/problems/move-zeroes
+/// </summary>
 public class MoveZeroesProblem
 {
     public void MoveZeroes(int[] nums)

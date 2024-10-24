@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.MonotonicStack;
 
+/// <summary>
+/// https://leetcode.com/problems/daily-temperatures
+/// </summary>
 public class DailyTemperaturesProblem
 {
     public int[] DailyTemperatures(int[] temperatures)

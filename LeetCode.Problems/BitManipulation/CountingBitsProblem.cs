@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.BitManipulation;
 
+/// <summary>
+/// https://leetcode.com/problems/counting-bits
+/// </summary>
 public class CountingBitsProblem
 {
     public int[] CountBits(int n)

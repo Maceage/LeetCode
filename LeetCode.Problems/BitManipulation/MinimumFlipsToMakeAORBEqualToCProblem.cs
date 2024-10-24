@@ -1,7 +1,8 @@
-﻿using System.Numerics;
+﻿namespace LeetCode.Problems.BitManipulation;
 
-namespace LeetCode.Problems.BitManipulation;
-
+/// <summary>
+/// https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c
+/// </summary>
 public class MinimumFlipsToMakeAORBEqualToCProblem
 {
     public int MinFlips(int a, int b, int c)

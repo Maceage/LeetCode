@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/n-th-tribonacci-number
+/// </summary>
 public class NthTribonacciNumberProblem
 {
     public int Tribonacci(int n)

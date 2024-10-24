@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
+/// </summary>
 public class LowestCommonAncestorOfBinaryTreeProblem
 {
     public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)

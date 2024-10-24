@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Intervals;
 
+/// <summary>
+/// https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
+/// </summary>
 public class MinimumNumberOfArrowsToBurstBalloonsProblem
 {
     public int FindMinArrowShots(int[][] points)

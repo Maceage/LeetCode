@@ -1,11 +1,14 @@
 ﻿namespace LeetCode.Problems.BinarySearch;
 
+/// <summary>
+/// https://leetcode.com/problems/successful-pairs-of-spells-and-potions
+/// </summary>
 public class SuccessfulPairsOfSpellsAndPotionsProblem
 {
     public int[] SuccessfulPairs(int[] spells, int[] potions, long success)
     {
-        return SuccessfulPairsSortingTwoPointers(spells, potions, success);
         return SuccessfulPairsSortingBinarySearch(spells, potions, success);
+        return SuccessfulPairsSortingTwoPointers(spells, potions, success);
     }
 
     private static int[] SuccessfulPairsSortingTwoPointers(int[] spells, int[] potions, long success)

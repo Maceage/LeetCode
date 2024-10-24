@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Heap;
 
+/// <summary>
+/// https://leetcode.com/problems/total-cost-to-hire-k-workers
+/// </summary>
 public class TotalCostToHireKWorkersProblem
 {
     public long TotalCost(int[] costs, int k, int candidates)

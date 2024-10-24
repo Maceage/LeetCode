@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.BinarySearch;
 
+/// <summary>
+/// https://leetcode.com/problems/guess-number-higher-or-lower
+/// </summary>
 public class GuessNumberHigherOrLowerProblem
 {
     public int PickedNumber { get; set; }

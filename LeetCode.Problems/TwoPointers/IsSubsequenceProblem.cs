@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.TwoPointers;
 
+/// <summary>
+/// https://leetcode.com/problems/is-subsequence
+/// </summary>
 public class IsSubsequenceProblem
 {
     public bool IsSubsequence(string s, string t)

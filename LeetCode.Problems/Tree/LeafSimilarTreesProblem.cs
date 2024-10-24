@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/leaf-similar-trees
+/// </summary>
 public class LeafSimilarTreesProblem
 {
     public bool LeafSimilar(TreeNode root1, TreeNode root2)

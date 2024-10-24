@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Heap;
 
+/// <summary>
+/// https://leetcode.com/problems/maximum-subsequence-score
+/// </summary>
 public class MaximumSubsequenceScoreProblem
 {
     public long MaxScore(int[] nums1, int[] nums2, int k)

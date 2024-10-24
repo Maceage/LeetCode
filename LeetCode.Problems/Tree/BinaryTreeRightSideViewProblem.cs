@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/binary-tree-right-side-view
+/// </summary>
 public class BinaryTreeRightSideViewProblem
 {
     public IList<int> RightSideView(TreeNode root)

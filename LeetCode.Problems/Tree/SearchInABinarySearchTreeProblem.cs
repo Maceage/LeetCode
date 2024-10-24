@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/search-in-a-binary-search-tree
+/// </summary>
 public class SearchInABinarySearchTreeProblem
 {
     public TreeNode SearchBST(TreeNode root, int val)

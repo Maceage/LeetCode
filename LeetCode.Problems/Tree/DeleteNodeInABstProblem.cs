@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/delete-node-in-a-bst
+/// </summary>
 public class DeleteNodeInABstProblem
 {
     public TreeNode DeleteNode(TreeNode root, int key)

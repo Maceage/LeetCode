@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/nearest-exit-from-entrance-in-maze
+/// </summary>
 public class NearestExitFromEntranceInMazeProblem
 {
     public int NearestExit(char[][] maze, int[] entrance)

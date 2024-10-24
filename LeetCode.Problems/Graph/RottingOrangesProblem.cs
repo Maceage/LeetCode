@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/rotting-oranges
+/// </summary>
 public class RottingOrangesProblem
 {
     public int OrangesRotting(int[][] grid)

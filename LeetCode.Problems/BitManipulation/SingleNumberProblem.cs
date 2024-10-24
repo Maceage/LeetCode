@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.BitManipulation;
 
+/// <summary>
+/// https://leetcode.com/problems/single-number
+/// </summary>
 public class SingleNumberProblem
 {
     public int SingleNumber(int[] nums)

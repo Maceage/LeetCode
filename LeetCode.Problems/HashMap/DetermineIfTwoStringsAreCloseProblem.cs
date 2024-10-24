@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.HashMap;
 
+/// <summary>
+/// https://leetcode.com/problems/determine-if-two-strings-are-close
+/// </summary>
 public class DetermineIfTwoStringsAreCloseProblem
 {
     public bool CloseStrings(string word1, string word2)

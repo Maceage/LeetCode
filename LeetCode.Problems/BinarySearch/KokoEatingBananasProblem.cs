@@ -1,11 +1,14 @@
 ﻿namespace LeetCode.Problems.BinarySearch;
 
+/// <summary>
+/// https://leetcode.com/problems/koko-eating-bananas
+/// </summary>
 public class KokoEatingBananasProblem
 {
     public int MinEatingSpeed(int[] piles, int h)
     {
-        //return MinEatingSpeedBruteForce(piles, h);
         return MinEatingSpeedBinarySearch(piles, h);
+        return MinEatingSpeedBruteForce(piles, h);
     }
 
     private static int MinEatingSpeedBinarySearch(int[] piles, int h)

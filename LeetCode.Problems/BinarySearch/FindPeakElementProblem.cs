@@ -1,12 +1,15 @@
 ﻿namespace LeetCode.Problems.BinarySearch;
 
+/// <summary>
+/// https://leetcode.com/problems/find-peak-element
+/// </summary>
 public class FindPeakElementProblem
 {
     public int FindPeakElement(int[] nums)
     {
-        //return FindPeakElementLinearScan(nums);
-        //return FindPeakElementRecursiveBinarySearch(nums);
         return FindPeakElementIterativeBinarySearch(nums);
+        return FindPeakElementRecursiveBinarySearch(nums);
+        return FindPeakElementLinearScan(nums);
     }
 
     private static int FindPeakElementIterativeBinarySearch(int[] nums)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/keys-and-rooms
+/// </summary>
 public class KeysAndRoomsProblem
 {
     public bool CanVisitAllRooms(IList<IList<int>> rooms)

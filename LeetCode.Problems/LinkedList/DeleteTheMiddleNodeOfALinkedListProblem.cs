@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list
+/// </summary>
 public class DeleteTheMiddleNodeOfALinkedListProblem
 {
     public ListNode DeleteMiddle(ListNode head)

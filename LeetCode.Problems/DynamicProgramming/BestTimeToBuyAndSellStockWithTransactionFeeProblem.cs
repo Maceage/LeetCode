@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
+/// </summary>
 public class BestTimeToBuyAndSellStockWithTransactionFeeProblem
 {
     public int MaxProfit(int[] prices, int fee)

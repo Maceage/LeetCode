@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.PrefixSum;
 
+/// <summary>
+/// https://leetcode.com/problems/find-pivot-index
+/// </summary>
 public class FindPivotIndexProblem
 {
     public int PivotIndex(int[] nums)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/kids-with-the-greatest-number-of-candies
+/// </summary>
 public class KidsWithTheGreatestNumberOfCandiesProblem
 {
     public IList<bool> KidsWithCandies(int[] candies, int extraCandies)

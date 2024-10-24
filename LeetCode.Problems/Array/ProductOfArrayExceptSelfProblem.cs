@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/product-of-array-except-self
+/// </summary>
 public class ProductOfArrayExceptSelfProblem
 {
     public int[] ProductExceptSelf(int[] nums)

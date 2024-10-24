@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Stack;
 
+/// <summary>
+/// https://leetcode.com/problems/removing-stars-from-a-string
+/// </summary>
 public class RemoveStarsFromAStringProblem
 {
     public string RemoveStars(string s)

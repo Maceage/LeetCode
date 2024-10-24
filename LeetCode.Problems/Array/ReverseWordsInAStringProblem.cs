@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/reverse-words-in-a-string
+/// </summary>
 public class ReverseWordsInAStringProblem
 {
     private readonly Stack<string> _wordStack = new();

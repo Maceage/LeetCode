@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/count-good-nodes-in-binary-tree
+/// </summary>
 public class CountGoodNodesInBinaryTreeProblem
 {
     public int GoodNodes(TreeNode rootNode)

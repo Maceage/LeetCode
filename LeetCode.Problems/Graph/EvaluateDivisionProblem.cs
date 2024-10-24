@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/evaluate-division
+/// </summary>
 public class EvaluateDivisionProblem
 {
     public double[] CalcEquation(IList<IList<string>> equations, double[] values, IList<IList<string>> queries)

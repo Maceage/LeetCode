@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/domino-and-tromino-tiling
+/// </summary>
 public class DominoAndTrominoTilingProblem
 {
     private const int MOD = 1_000_000_007;

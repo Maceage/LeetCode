@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/house-robber
+/// </summary>
 public class HouseRobberProblem
 {
     private static int[] _cache;

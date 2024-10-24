@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree
+/// </summary>
 public class LongestZigZagPathInABinaryTreeProblem
 {
     private int _pathLength;

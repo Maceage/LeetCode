@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list
+/// </summary>
 public class MaximumTwinSumOfALinkedListProblem
 {
     public int PairSum(ListNode head)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.TwoPointers;
 
+/// <summary>
+/// https://leetcode.com/problems/max-number-of-k-sum-pairs
+/// </summary>
 public class MaxNumberOfKSumPairsProblem
 {
     public int MaxOperations(int[] nums, int k)

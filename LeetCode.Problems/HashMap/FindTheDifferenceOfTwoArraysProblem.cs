@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.HashMap;
 
+/// <summary>
+/// https://leetcode.com/problems/find-the-difference-of-two-arrays
+/// </summary>
 public class FindTheDifferenceOfTwoArraysProblem
 {
     public IList<IList<int>> FindDifference(int[] nums1, int[] nums2)

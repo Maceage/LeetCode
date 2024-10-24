@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.HashMap;
 
+/// <summary>
+/// https://leetcode.com/problems/equal-row-and-column-pairs
+/// </summary>
 public class EqualRowAndColumnPairsProblem
 {
     public int EqualPairs(int[][] grid)

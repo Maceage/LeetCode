@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero
+/// </summary>
 public class ReorderRoutesToMakeAllPathsLeadToTheCityZeroProblem
 {
     private int _count;

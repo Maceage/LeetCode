@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.MonotonicStack;
 
+/// <summary>
+/// https://leetcode.com/problems/online-stock-span
+/// </summary>
 public class OnlineStockSpanProblem
 {
     public class StockSpanner

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Queue;
 
+/// <summary>
+/// https://leetcode.com/problems/number-of-recent-calls
+/// </summary>
 public class NumberOfRecentCallsProblem
 {
     public class RecentCounter

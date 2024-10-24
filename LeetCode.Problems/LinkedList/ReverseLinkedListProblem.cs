@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/reverse-linked-list
+/// </summary>
 public class ReverseLinkedListProblem
 {
     public ListNode ReverseList(ListNode head)

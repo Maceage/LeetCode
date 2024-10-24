@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Trie;
 
+/// <summary>
+/// https://leetcode.com/problems/implement-trie-prefix-tree
+/// </summary>
 public class ImplementTrieProblem
 {
     public class Trie

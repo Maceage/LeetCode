@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.HashMap;
 
+/// <summary>
+/// https://leetcode.com/problems/roman-to-integer/
+/// </summary>
 public class RomanToIntegerProblem
 {
     private readonly Dictionary<char, int> romanNumeralsDictionary = new()

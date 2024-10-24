@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/longest-common-prefix
+/// </summary>
 public class LongestCommonPrefixProblem
 {
     public string LongestCommonPrefix(string[] strs)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/can-place-flowers/
+/// </summary>
 public class CanPlaceFlowersProblem
 {
     public bool CanPlaceFlowers(int[] flowerbed, int n)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Stack;
 
+/// <summary>
+/// https://leetcode.com/problems/decode-string
+/// </summary>
 public class DecodeStringProblem
 {
     public string DecodeString(string s)

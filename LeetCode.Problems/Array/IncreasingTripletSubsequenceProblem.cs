@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/increasing-triplet-subsequence
+/// </summary>
 public class IncreasingTripletSubsequenceProblem
 {
     public bool IncreasingTriplet(int[] nums)

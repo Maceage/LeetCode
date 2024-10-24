@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/greatest-common-divisor-of-strings/
+/// </summary>
 public class GreatestCommonDivisorOfStringsProblem
 {
     public string GcdOfStrings(string string1, string string2)

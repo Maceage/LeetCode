@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Stack;
 
+/// <summary>
+/// https://leetcode.com/problems/asteroid-collision
+/// </summary>
 public class AsteroidCollisionProblem
 {
     public int[] AsteroidCollision(int[] asteroids)

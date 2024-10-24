@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.TwoPointers;
 
+/// <summary>
+/// https://leetcode.com/problems/string-compression
+/// </summary>
 public class StringCompressionProblem
 {
     public int Compress(ref char[] chars)

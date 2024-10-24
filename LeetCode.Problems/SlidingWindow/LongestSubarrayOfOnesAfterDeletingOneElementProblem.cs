@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.SlidingWindow;
 
+/// <summary>
+/// https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element
+/// </summary>
 public class LongestSubarrayOfOnesAfterDeletingOneElementProblem
 {
     public int LongestSubarray(int[] nums)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Stack;
 
+/// <summary>
+/// https://leetcode.com/problems/valid-parentheses
+/// </summary>
 public class ValidParenthesesProblem
 {
     private readonly Stack<char> _charStack = new();

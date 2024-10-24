@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Backtracking;
 
+/// <summary>
+/// https://leetcode.com/problems/combination-sum-iii
+/// </summary>
 public class CombinationSumProblem
 {
     private readonly IList<IList<int>> _combinations = new List<IList<int>>();

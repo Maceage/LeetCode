@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/reverse-vowels-of-a-string
+/// </summary>
 public class ReverseVowelsOfAStringProblem
 {
     public string ReverseVowels(string s)

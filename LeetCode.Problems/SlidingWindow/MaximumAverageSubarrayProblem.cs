@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.SlidingWindow;
 
+/// <summary>
+/// https://leetcode.com/problems/maximum-average-subarray-i
+/// </summary>
 public class MaximumAverageSubarrayProblem
 {
     public double FindMaxAverage(int[] nums, int k)

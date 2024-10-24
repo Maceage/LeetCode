@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/reverse-string
+/// </summary>
 public class ReverseStringProblem
 {
     public void ReverseString(char[] s)

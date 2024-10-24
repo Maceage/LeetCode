@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Heap;
 
+/// <summary>
+/// https://leetcode.com/problems/smallest-number-in-infinite-set
+/// </summary>
 public class SmallestNumberInInfiniteSetProblem
 {
     public class SmallestInfiniteSet

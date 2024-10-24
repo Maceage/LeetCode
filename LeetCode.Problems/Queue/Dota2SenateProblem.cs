@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Queue;
 
+/// <summary>
+/// https://leetcode.com/problems/dota2-senate
+/// </summary>
 public class Dota2SenateProblem
 {
     public string PredictPartyVictory(string senate)

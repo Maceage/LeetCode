@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/path-sum-iii
+/// </summary>
 public class PathSum3Problem
 {
     private int _count;

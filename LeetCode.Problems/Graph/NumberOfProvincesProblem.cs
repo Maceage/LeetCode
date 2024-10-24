@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Graph;
 
+/// <summary>
+/// https://leetcode.com/problems/number-of-provinces
+/// </summary>
 public class NumberOfProvincesProblem
 {
     public int FindCircleNum(int[][] isConnected)

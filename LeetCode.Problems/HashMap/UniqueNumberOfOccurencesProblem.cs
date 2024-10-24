@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.HashMap;
 
+/// <summary>
+/// https://leetcode.com/problems/unique-number-of-occurrences
+/// </summary>
 public class UniqueNumberOfOccurrencesProblem
 {
     public bool UniqueOccurrences(int[] arr)

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.TwoPointers;
 
+/// <summary>
+/// https://leetcode.com/problems/container-with-most-water
+/// </summary>
 public class ContainerWithTheMostWaterProblem
 {
     public int MaxArea(int[] height)

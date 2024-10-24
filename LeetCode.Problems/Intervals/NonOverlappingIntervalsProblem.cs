@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Intervals;
 
+/// <summary>
+/// https://leetcode.com/problems/non-overlapping-intervals
+/// </summary>
 public class NonOverlappingIntervalsProblem
 {
     public int EraseOverlapIntervals(int[][] intervals)

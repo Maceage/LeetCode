@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Trie;
 
+/// <summary>
+/// https://leetcode.com/problems/search-suggestions-system
+/// </summary>
 public class SearchSuggestionsSystemProblem
 {
     public IList<IList<string>> SuggestedProducts(string[] products, string searchWord)

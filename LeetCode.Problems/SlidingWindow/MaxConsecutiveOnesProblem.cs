@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.SlidingWindow;
 
+/// <summary>
+/// https://leetcode.com/problems/max-consecutive-ones-iii
+/// </summary>
 public class MaxConsecutiveOnesProblem
 {
     public int LongestOnes(int[] nums, int k)

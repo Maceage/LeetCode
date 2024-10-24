@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.PrefixSum;
 
+/// <summary>
+/// https://leetcode.com/problems/find-the-highest-altitude
+/// </summary>
 public class FindTheHighestAltitudeProblem
 {
     public int LargestAltitude(int[] gain)

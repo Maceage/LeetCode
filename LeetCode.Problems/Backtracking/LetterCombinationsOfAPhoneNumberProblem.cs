@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Backtracking;
 
+/// <summary>
+/// https://leetcode.com/problems/letter-combinations-of-a-phone-number
+/// </summary>
 public class LetterCombinationsOfAPhoneNumberProblem
 {
     private readonly Dictionary<char, string> _lettersDictionary = new()
@@ -13,7 +16,7 @@ public class LetterCombinationsOfAPhoneNumberProblem
         {'6', "mno"},
         {'7', "pqrs"},
         {'8', "tuv"},
-        {'9', "wxyz"},
+        {'9', "wxyz"}
     };
 
     private readonly List<string> _combinations = new();

@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.DynamicProgramming;
 
+/// <summary>
+/// https://leetcode.com/problems/unique-paths
+/// </summary>
 public class UniquePathsProblem
 {
     public int UniquePaths(int m, int n)

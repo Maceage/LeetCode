@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.Tree;
 
+/// <summary>
+/// https://leetcode.com/problems/maximum-depth-of-binary-tree
+/// </summary>
 public class MaximumDepthOfBinaryTreeProblem
 {
     public int MaxDepth(TreeNode root)
