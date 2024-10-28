@@ -5,13 +5,47 @@
 /// </summary>
 public class SmallestNumberInInfiniteSetProblem
 {
-    public class SmallestInfiniteSet
+    public class SmallestInfiniteSetSortedSet
+    {
+        private readonly SortedSet<int> _addedIntegers = [];
+        private int _currentInt = 1;
+
+        public void AddBack(int num)
+        {
+            if ((_currentInt <= num) || (!_addedIntegers.Add(num)))
+            {
+                return;
+            }
+        }
+
+        public int PopSmallest()
+        {
+            int answer;
+
+            if (_addedIntegers.Count > 0)
+            {
+                answer = _addedIntegers.First();
+
+                _addedIntegers.Remove(answer);
+            }
+            else
+            {
+                answer = _currentInt;
+
+                _currentInt += 1;
+            }
+
+            return answer;
+        }
+    }
+
+    public class SmallestInfiniteSetPriorityQueueHashSet
     {
         private int _counter;
         private readonly PriorityQueue<int, int> _priorityQueue;
         private readonly HashSet<int> _numberSet;
 
-        public SmallestInfiniteSet()
+        public SmallestInfiniteSetPriorityQueueHashSet()
         {
             _counter = 0;
             _priorityQueue = new PriorityQueue<int, int>();

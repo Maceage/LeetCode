@@ -9,19 +9,39 @@ public class SmallestNumberInInfiniteSetProblemTests
     public void SmallestInfiniteSet_TestCase_1()
     {
         // Arrange
-        SmallestNumberInInfiniteSetProblem.SmallestInfiniteSet smallestInfiniteSet = new SmallestNumberInInfiniteSetProblem.SmallestInfiniteSet();
+        SmallestNumberInInfiniteSetProblem.SmallestInfiniteSetPriorityQueueHashSet smallestInfiniteSetPriorityQueueHashSet = new SmallestNumberInInfiniteSetProblem.SmallestInfiniteSetPriorityQueueHashSet();
 
         // Act/Assert
-        smallestInfiniteSet.AddBack(2);
+        smallestInfiniteSetPriorityQueueHashSet.AddBack(2);
 
-        smallestInfiniteSet.PopSmallest().Should().Be(1);
-        smallestInfiniteSet.PopSmallest().Should().Be(2);
-        smallestInfiniteSet.PopSmallest().Should().Be(3);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(1);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(2);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(3);
 
-        smallestInfiniteSet.AddBack(1);
+        smallestInfiniteSetPriorityQueueHashSet.AddBack(1);
 
-        smallestInfiniteSet.PopSmallest().Should().Be(1);
-        smallestInfiniteSet.PopSmallest().Should().Be(4);
-        smallestInfiniteSet.PopSmallest().Should().Be(5);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(1);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(4);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(5);
+    }
+
+    [Fact]
+    public void SmallestInfiniteSet_TestCase_2()
+    {
+        // Arrange
+        SmallestNumberInInfiniteSetProblem.SmallestInfiniteSetSortedSet smallestInfiniteSetPriorityQueueHashSet = new SmallestNumberInInfiniteSetProblem.SmallestInfiniteSetSortedSet();
+
+        // Act/Assert
+        smallestInfiniteSetPriorityQueueHashSet.AddBack(2);
+
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(1);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(2);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(3);
+
+        smallestInfiniteSetPriorityQueueHashSet.AddBack(1);
+
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(1);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(4);
+        smallestInfiniteSetPriorityQueueHashSet.PopSmallest().Should().Be(5);
     }
 }
