@@ -29,4 +29,16 @@ public class LongestCommonPrefixProblemTests
         // Assert
         longestCommonPrefixProblem.LongestCommonPrefix(strings).Should().BeEmpty();
     }
+
+    [Fact]
+    public void LongestCommonPrefix_TestCase_3()
+    {
+        string[] strings = ["a"];
+
+        // Act
+        LongestCommonPrefixProblem longestCommonPrefixProblem = new LongestCommonPrefixProblem();
+
+        // Assert
+        longestCommonPrefixProblem.LongestCommonPrefix(strings).Should().Be("a");
+    }
 }
