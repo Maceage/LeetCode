@@ -3,6 +3,9 @@ using System.Text;
 
 namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/add-binary
+/// </summary>
 public class AddBinaryProblem
 {
     public string AddBinary(string a, string b)

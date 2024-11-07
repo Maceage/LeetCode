@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/pascals-triangle
+/// </summary>
 public class PascalsTriangleProblem
 {
     public IList<IList<int>> Generate(int numRows)

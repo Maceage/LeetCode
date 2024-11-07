@@ -1,5 +1,8 @@
 ﻿namespace LeetCode.Problems.Array;
 
+/// <summary>
+/// https://leetcode.com/problems/spiral-matrix
+/// </summary>
 public class SpiralMatrixProblem
 {
     private readonly int[] _rightDirection = [1, 0];
