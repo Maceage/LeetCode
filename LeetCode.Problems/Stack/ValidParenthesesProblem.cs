@@ -7,13 +7,6 @@ public class ValidParenthesesProblem
 {
     private readonly Stack<char> _charStack = new();
 
-    private readonly Dictionary<char, char> _openingBracketsDictionary = new()
-    {
-        {'(', ')'},
-        {'{', '}'},
-        {'[', ']'}
-    };
-
     private readonly Dictionary<char, char> _closingBracketsDictionary = new()
     {
         {')', '('},
@@ -23,30 +16,25 @@ public class ValidParenthesesProblem
 
     public bool IsValid(string s)
     {
-        bool isValid = false;
-
         foreach (var c in s.ToCharArray())
         {
-            if (_openingBracketsDictionary.ContainsKey(c))
+            if (_closingBracketsDictionary.TryGetValue(c, out var openingBracket))
             {
-                _charStack.Push(c);
-            }
-            else if (_closingBracketsDictionary.TryGetValue(c, out var openingBracket))
-            {
-                char lastChar = _charStack.Pop();
+                char lastChar = _charStack.Count <= 0 ? '#' : _charStack.Peek();
 
                 if (lastChar != openingBracket)
                 {
-                    break;
+                    return false;
                 }
+
+                _charStack.Pop();
+            }
+            else
+            {
+                _charStack.Push(c);
             }
         }
 
-        if (_charStack.Count == 0)
-        {
-            isValid = true;
-        }
-
-        return isValid;
+        return _charStack.Count <= 0;
     }
 }

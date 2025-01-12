@@ -38,7 +38,7 @@ public class ValidParenthesesProblemTests
         ValidParenthesesProblem validParenthesesProblem = new ValidParenthesesProblem();
 
         // Act/Assert
-        validParenthesesProblem.IsValid(s).Should().BeTrue();
+        validParenthesesProblem.IsValid(s).Should().BeFalse();
     }
 
     [Fact]
@@ -51,5 +51,29 @@ public class ValidParenthesesProblemTests
 
         // Act/Assert
         validParenthesesProblem.IsValid(s).Should().BeTrue();
+    }
+
+    [Fact]
+    public void IsValid_TestCase_5()
+    {
+        // Arrange
+        string s = "]";
+
+        ValidParenthesesProblem validParenthesesProblem = new ValidParenthesesProblem();
+
+        // Act/Assert
+        validParenthesesProblem.IsValid(s).Should().BeFalse();
+    }
+
+    [Fact]
+    public void IsValid_TestCase_6()
+    {
+        // Arrange
+        string s = "[";
+
+        ValidParenthesesProblem validParenthesesProblem = new ValidParenthesesProblem();
+
+        // Act/Assert
+        validParenthesesProblem.IsValid(s).Should().BeFalse();
     }
 }
