@@ -29,6 +29,32 @@ public static class ListNodeExtensions
         return headNode;
     }
 
+    public static ListNode CreateLinkedListWithCycle(this int[] nodes, int position)
+    {
+        ListNode headNode = nodes.CreateLinkedList();
+
+        if (position >= 0)
+        {
+            ListNode listNode = headNode;
+
+            for (int i = 0; i <= position; i++)
+            {
+                listNode = headNode.Next;
+            }
+
+            ListNode current = headNode;
+
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+
+            current.Next = listNode;
+        }
+
+        return headNode;
+    }
+
     public static void AssertLinkedList(this ListNode headNode, int[] expectedNodeValues)
     {
         int i = 0;
