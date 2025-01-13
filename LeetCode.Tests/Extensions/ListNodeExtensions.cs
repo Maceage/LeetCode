@@ -37,7 +37,7 @@ public static class ListNodeExtensions
         {
             ListNode listNode = headNode;
 
-            for (int i = 0; i <= position; i++)
+            for (int i = 0; i < position; i++)
             {
                 listNode = headNode.Next;
             }
