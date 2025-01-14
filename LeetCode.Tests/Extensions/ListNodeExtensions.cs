@@ -73,4 +73,16 @@ public static class ListNodeExtensions
 
         i.Should().Be(expectedNodeValues.Length);
     }
+
+    public static ListNode GetNodeAt(this ListNode headNode, int skipCount)
+    {
+        ListNode listNode = headNode;
+
+        for (int i = 0; i < skipCount - 1; ++i)
+        {
+            listNode = listNode.Next;
+        }
+
+        return listNode;
+    }
 }
