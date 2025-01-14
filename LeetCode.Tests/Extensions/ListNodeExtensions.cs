@@ -7,10 +7,12 @@ public static class ListNodeExtensions
 {
     public static ListNode CreateLinkedList(this int[] nodeValues)
     {
-        ListNode headNode = new ListNode();
+        ListNode headNode = null;
 
         if (nodeValues.Length > 0)
         {
+            headNode = new ListNode();
+
             headNode.Value = nodeValues[0];
 
             ListNode nextNode = new ListNode();
@@ -61,17 +63,24 @@ public static class ListNodeExtensions
 
         ListNode currentNode = headNode;
 
-        while (currentNode != null)
+        if (expectedNodeValues.Length > 0)
         {
-            int current = expectedNodeValues[i];
+            while (currentNode != null)
+            {
+                int current = expectedNodeValues[i];
 
-            currentNode.Value.Should().Be(current);
+                currentNode.Value.Should().Be(current);
 
-            currentNode = currentNode.Next;
-            i++;
+                currentNode = currentNode.Next;
+                i++;
+            }
+
+            i.Should().Be(expectedNodeValues.Length);
         }
-
-        i.Should().Be(expectedNodeValues.Length);
+        else
+        {
+            headNode.Should().BeNull();
+        }
     }
 
     public static ListNode GetNodeAt(this ListNode headNode, int skipCount)
