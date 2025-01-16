@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/intersection-of-two-linked-lists/
+/// </summary>
 public class IntersectionOfTwoLinkedListsProblem
 {
     public ListNode GetIntersectionNode(ListNode headA, ListNode headB)

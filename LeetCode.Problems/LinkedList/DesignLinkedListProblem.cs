@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/design-linked-list/
+/// </summary>
 public class DesignLinkedListProblem
 {
     public class MyLinkedList

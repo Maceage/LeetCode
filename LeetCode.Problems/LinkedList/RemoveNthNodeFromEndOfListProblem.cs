@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/remove-nth-node-from-end-of-list
+/// </summary>
 public class RemoveNthNodeFromEndOfListProblem
 {
     public ListNode RemoveNthFromEnd(ListNode head, int n)

@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/remove-linked-list-elements
+/// </summary>
 public class RemoveLinkedListElementsProblem
 {
     public ListNode RemoveElements(ListNode head, int val)

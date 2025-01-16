@@ -2,6 +2,9 @@
 
 namespace LeetCode.Problems.LinkedList;
 
+/// <summary>
+/// https://leetcode.com/problems/linked-list-cycle/
+/// </summary>
 public class LinkedListCycleProblem
 {
     private readonly HashSet<ListNode> _visitedNodes = [];
