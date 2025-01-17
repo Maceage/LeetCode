@@ -41,17 +41,20 @@ public static class ListNodeExtensions
 
             for (int i = 0; i < position; i++)
             {
-                listNode = headNode.Next;
+                listNode = listNode.Next;
             }
 
             ListNode current = headNode;
 
-            while (current.Next != null)
+            if (current != null)
             {
-                current = current.Next;
-            }
+                while (current.Next != null)
+                {
+                    current = current.Next;
+                }
 
-            current.Next = listNode;
+                current.Next = listNode;
+            }
         }
 
         return headNode;
@@ -72,7 +75,14 @@ public static class ListNodeExtensions
                 currentNode.Value.Should().Be(current);
 
                 currentNode = currentNode.Next;
+
                 i++;
+
+                if (currentNode == headNode)
+                {
+                    // Cyclic linked list
+                    break;
+                }
             }
 
             i.Should().Be(expectedNodeValues.Length);
